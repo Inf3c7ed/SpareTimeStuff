@@ -1,0 +1,48 @@
+#include <iostream>
+#include <string>
+
+
+using namespace std;
+
+int main()
+{
+    cout << "Enter your first number: ";
+    int num1;
+    cin >> num1;
+    cout << "Enter your second number: ";
+    int num2;
+    cin >> num2;
+    cout << "Addition / substraction / multiplication / division?" << endl;
+    string action;
+    cin >> action;
+    
+    int result = 0;
+    
+    if(action == "Addition")
+    {
+        result =  num1 + num2;
+        cout << "The result is: "<<result << endl;
+    }
+    
+    else if (action == "substraction"){
+        
+        result = num1 - num2;
+        cout << "The result is: " << result << endl;
+    }
+    else if (action == "multiplication"){
+        
+        result = num1 * num2;
+        cout << "The result is: " << result << endl;
+    }
+    else if (action == "division"){
+        
+        result = num1 / num2;
+        cout << "The result is: " << result << endl;
+    }
+    else if (action != "substraction" && action != "Addition" && action != "multiplication"
+     && action != "division") {
+        cout << "The input is wrong.";
+    }
+    
+    return 0;
+}
