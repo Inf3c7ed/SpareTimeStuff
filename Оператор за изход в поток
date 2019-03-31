@@ -1,0 +1,6 @@
+ostream&operator<<(ostream&stream, Employee Sasho) 
+{
+	stream << Sasho.name << " ";
+	stream << Sasho.salary << " " << endl;
+	return stream;
+}
